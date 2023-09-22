@@ -1,0 +1,141 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #121212;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a148c;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #4a148c;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#search-bar input {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#search-button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-news {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.latest-news h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4a148c;
+}
+
+.scroll-container {
+    display: flex;
+}
+
+/* Style your news sections here */
+
+aside {
+    flex-basis: 20%;
+}
+
+.multimedia-content {
+    flex-basis: 30%;
+}
+
+footer {
+    text-align: center;
+    background-color: #4a148c;
+    padding: 20px;
+    color: white;
+}
+
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 90vh;
+    /*overflow-x: hidden;*/
+    transition: transform 0.5s ease-in-out;
+}
+
+.section {
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    height: 570px;
+    background-color: #06d3d3;
+    border-radius: 10px;
+}
+
+
+#section-one-news {
+    background-image: url('/images/Mortal\ Kombat\ 1.jpg');
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 100px;
+    
+}
+
+#section-two-news {
+    background-image: url('/images/one\ piece\ odyssey.jpg');
+    color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
