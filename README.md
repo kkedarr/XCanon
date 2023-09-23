@@ -26,7 +26,7 @@ Ready to embark on your gaming odyssey? Sign up now and let the games begin!.
 
 
 
-##Prerequisites
+## Prerequisites
 Before you embark on your gaming journey with us, here's what you need:
 
 1. Device and Internet Connection
