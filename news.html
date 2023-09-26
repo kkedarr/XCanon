@@ -3,110 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Page</title>
-    <link rel="stylesheet" href="news.css">
+    <title>news page</title>
     <script src="https://kit.fontawesome.com/11b326c497.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="news.css">
+</head>
 <body>
     <header>
         <nav>
-            <div class="navbar">
-                <a href="/" id="navbar-logo"> <i class="fas fa-gem"> </i>XCanon News</a>
-                <ul>
-                    <li><a href="/">Subscribe</a></li>
-                </ul>
-                <div id="search-bar" >
-                <input type="text" name="search" placeholder="Search...">
-                <label type="button" for="search" name="Search">Search</label>
-                </div>
-            </div>
+            <a href="/" id="navbar__logo"> <i class="fas fa-gem"> </i>XCanon News</a>
+            <ul>
+                <li><a href="/"></a>Leaderboard</li>
+                <li><a href="/"></a>Tournaments</li>
+                <li><a href="/"></a>Subscribe</li>
+            </ul>
+            <input type="search" id="search" name="gsearch" placeholder="Search...">
+            <button type="submit" for="search" >Search</button>
         </nav>
     </header>
 
     <main>
-        <article>
-            <h1>Latest Gaming Updates</h1>
-            <div class="scroll-container">
-                <div id="section-one-news" class="section">
-                    <h2>Mortal Kombat 1 Release</h2>
-                    <p>Prepare for the highly anticipated release of Mortal
-                        Kombat 1 on September 19th. This legendary game will
-                        be accessible on various gaming platforms, including PS5,
-                        Xbox Series X|S, Switch, and PC. Get ready to embark on a
-                        thrilling combat adventure across these diverse devices.</p>
+        <section class="news-card">
+            <div class="card-image">
+                <img src="/images/Mortal Kombat 1.jpg" alt="" >
+            </div>
+            <div class="card-topic">
+                <p>mortal kombat</p>
+            </div>
+            <div id="card-description">
+                <h3>Missed Opportunity: John Wick's Potential Appearance 
+                in Mortal Kombat 1 Falls Through</h3>
+                <p>"NetherRealm Studios' attempt to include John Wick in Mortal 
+                Kombat 1 fell through, despite initial interest. Ed Boon, 
+                a key figure at NetherRealm, believed John Wick would be a 
+                great addition to the Mortal Kombat universe. However, Keanu 
+                Reeves, the actor behind John Wick, and Lionsgate, which owns 
+                the character, had other plans. Licensing rights and fees 
+                likely played a role in this decision. Nevertheless, John Wick 
+                made a cameo in Fortnite in 2019. Boon also toyed with the idea 
+                of having established actors portray characters in Mortal Kombat 
+                1, even considering Keanu Reeves for the role of Kenshi. Ultimately, 
+                this remained a "pipe dream" due to the complexities of video game acting." 
+                </p>
+            </div>
+            <div id="date-and-author">
+                <div class="writer-avatar" >
+                    <img src="images/avatar.png" alt="">
                 </div>
-                <div id="section-two-news" class="section">
-                    <h2>Unveiling "One Piece Odyssey"</h2>
-                    <p>Prepare to embark on an epic gaming adventure as
-                       "One Piece Odyssey" sets sail on January 13th.
-                        This highly anticipated game is making waves on 
-                        PlayStation 4, PlayStation 5, Windows PC, and 
-                        Xbox Series X. Join Luffy and his crew in this 
-                        thrilling odyssey through a world of pirates, 
-                        treasures, and unforgettable challenges. Stay tuned 
-                        for an unforgettable gaming experience!</p>
+                <div>
+                    <p id="author">By: Omar O. C. </p>
                 </div>
-                <div class="section">
-                    <h2>Section 3</h2>
-                    <p>This is the content of section three</p>
+                <div>
+                    <p id="date">on 24-09-2023</p>
                 </div>
-                <div class="section">
-                    <h2>Section 4</h2>
-                    <p>This is the content of section four</p>
+                
+            </div>
+        </section>
+
+        <section class="news-card">
+            <div class="card-image">
+                <img src="/images/Hideki_Kamiya 1.png" alt="" >
+            </div>
+            <div class="card-topic">
+                <p>platinumgames</p>
+            </div>
+            <div id="card-description">
+                <h3>Hideki Kamiya, Director Behind Bayonetta, 
+                Parts Ways with PlatinumGames to Embark on New Projects</h3>
+                <p>Hideki Kamiya, the co-founder of the renowned PlatinumGames 
+                and the creative genius behind the iconic Bayonetta franchise, 
+                bids a heartfelt farewell to the company to embark on exciting 
+                new ventures within the dynamic gaming industry. This monumental 
+                decision, officially announced on the social media platform 
+                Xitter, signifies the culmination of his remarkable journey with 
+                PlatinumGames, where he wielded his visionary prowess from its 
+                very inception. Kamiya's highly-anticipated departure is slated 
+                for the significant date of October 12, 2023. In a collective 
+                expression of enthusiasm, both PlatinumGames and the esteemed 
+                Hideki Kamiya himself share an unwavering optimism regarding 
+                the indelible mark he will continue to leave on the ever-evolving 
+                gaming landscape.
+                </p>
+            </div>
+            <div id="date-and-author">
+                <div class="writer-avatar" >
+                    <img src="images/avatar.png" alt="">
                 </div>
-                <div class="section">
-                    <h2>Section 5</h2>
-                    <p>This is the content for section five</p>
+                <div>
+                    <p id="author">By: Omar O. C. </p>
                 </div>
-                <div class="section">
-                    <h2>Section 6</h2>
-                    <p>This is the content of section six</p>
+                <div>
+                    <p id="date">on 25-09-2023</p>
                 </div>
+                
             </div>
-            <button id="scroll-left-btn"><<</button>    
-            <button id="scroll-right-btn" >>></button>
-    </article>    
-    <aside>
-        <h4>Aside articles</h4>
-        <!--<div class="scroll-container">
-            <div id="section-one-news" class="section">
-                <h2>Mortal Kombat 1 Release</h2>
-                <p>Prepare for the highly anticipated release of Mortal
-                    Kombat 1 on September 19th. This legendary game will
-                    be accessible on various gaming platforms, including PS5,
-                    Xbox Series X|S, Switch, and PC. Get ready to embark on a
-                    thrilling combat adventure across these diverse devices.</p>
+        </section>
+
+        <section class="news-card">
+            <div class="card-image">
+                <img src="/images/all-star-brawl-2-garfield-spotlight-781x439.jpg" alt="" >
             </div>
-            <div class="section">
-                <h2>Section 2</h2>
-                <p>This is the content for section two</p>
+            <div class="card-topic">
+                <p>nickelodeon all-star brawl 2</p>
             </div>
-            <div class="section">
-                <h2>Section 3</h2>
-                <p>This is the content of section three</p>
+            <div id="card-description">
+                <h3>Nickelodeon All-Star Brawl 2 Unveils Exciting Garfield Moves in Latest Trailer</h3>
+                <p>Nickelodeon All-Star Brawl 2 has unveiled an exciting spotlight trailer, 
+                this time featuring Garfield's updated moveset. The game is set to release 
+                on November 14th, 2023, across platforms including PC, Nintendo Switch, Xbox, 
+                and PlayStation. The clever Monday release adds to the buzz surrounding the game's 
+                upcoming launch. With a slew of new content and revamped movesets, Nickelodeon All-Star 
+                Brawl 2 aims to surpass its predecessor, provided it operates smoothly. Garfield's 
+                gameplay centers around his 'Sugar Rush' meter, which turns food pickups into bursts 
+                of incredible speed. While Garfield may seem a bit overpowered initially, players can 
+                trigger a shorter version of the meter for accessibility. However, balancing his speed 
+                with strategic pie-throwing is crucial, making for an intriguing gameplay experience.
+                </p>
             </div>
-            <div class="section">
-                <h2>Section 4</h2>
-                <p>This is the content of section four</p>
+            <div id="date-and-author">
+                <div class="writer-avatar" >
+                    <img src="images/avatar.png" alt="">
+                </div>
+                <div>
+                    <p id="author">By: Omar O. C. </p>
+                </div>
+                <div>
+                    <p id="date">on 25-09-2023</p>
+                </div>
+                
             </div>
-            <div class="section">
-                <h2>Section 5</h2>
-                <p>This is the content for section five</p>
-            </div>
-            <div class="section">
-                <h2>Section 6</h2>
-                <p>This is the content of section six</p>
-            </div>
-        </div>
-    </aside>-->
-        <script src="news.js"></script>
+        </section>
     </main>
 
     <footer>
-        &copy; 2023 XCanon Games
+        &copy; All rights reserved
     </footer>
 </body>
 </html>

@@ -1,171 +1,175 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    /*overflow: hidden;*/
+    font-family: 'Dosis', sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: #121212;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar {
+header {
+    background-color: #000;
     display: flex;
-    background: #121212;
-    width: 100%;
+    justify-content: center;
 }
 
-#navbar-logo {
-    margin: 20px;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-#navbar-logo i {
-    color: #fff;
-    
-}
-
-.navbar a {
-    color: #fff;
-}
-
-.navbar ul li {
-    margin-left: 20px;
+nav ul {
     list-style: none;
-    margin-top: 29px;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+
+}
+
+nav ul li a {
+    margin-left: 20px;
     margin-right: 20px;
 }
 
-#search-bar {
-    margin: 29px;
+#navbar__logo {
+    background-color: #b283f4;
+    background-image: linear-gradient(to top, #b283f4 40%, #068383 60%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+#search {
+    justify-content: center;
+    height: 25px;
+    width: 300px;
+    border: 1px solid #510da5;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff;
     font-size: small;
 }
 
-#search-bar input {
-    border: 2px solid #121212;
-    margin-right: 0;
-    color: #121212;
+button {
+    border: 1px solid #4a148c;
+    border-radius: 5px;
+    height: 25px;
+    background-color: #4a148c;
+    background-image: linear-gradient(to right, 
+    #a559df 0%, 
+    #9553c6 0%,
+    #9155be 21%,
+    #8355a7 52%,
+    #5b2684 78%,
+    #6911ac 100%);
+    font-weight: bold;
 }
 
-#search-bar label {
-    border: 2px solid #121212;
-    margin-left: 0;
-    color: #fff;
-   
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    border: 1px solid #4a148c;
+    border-radius: 10px;
+    width: 380px;
+    height: 500 px;
+    background-color: #4a148c;
+    background-image: linear-gradient(to right, 
+    #a559df 0%, 
+    #9553c6 0%,
+    #9155be 21%,
+    #8355a7 52%,
+    #5b2684 78%,
+    #6911ac 100%);
+    margin: 25px;
+}
+
+#card-description {
+    margin-top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#card-description p {
+    font-size: small;
+    color: #fffefe;
+    font-weight: normal;
+}
+
+#card-description h3 {
+    font-size: large;
+
+}
+
+.card-image img {
+    width: 100%;
+    height:180px;
+    padding: 0;
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+}
+
+#most-recent-news {
+    border: 1px solid #ad2c2c;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+}
+
+.card-topic {
+    margin-left: 5px;
+    margin-right: 54px;
+    color: #02ffff;
+    font-weight: bold;
+    font-size: small;
+    text-transform: uppercase;
+    
+}
+
+.writer-avatar img {
+    width: 35px;
+    border-radius: 25px;
+    margin-top: 48px;
+    margin-left: 7px;
+}
+
+#date {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 59px;
+    color: #141313;
+}
+
+#author {
+    font-size: large;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 55px; 
+    color: #383838;   
+}
+
+#author:hover {
+    color: #000;
+}
+
+#date-and-author {
+    position: relative;
+    display: flex;
 }
 
 footer {
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-}
-
-.scroll-container {
-    display: flex;
-    flex-wrap: nowrap;
+    color: white;
+    background-color: #000;
     width: 100%;
-    height: 90vh;
-    /*overflow-x: hidden;*/
-    transition: transform 0.5s ease-in-out;
-}
-
-.section {
-    flex: 0 0 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    display: none;
-    height: 570px;
-    background-color: #06d3d3;
-    border-radius: 10px;
-}
-
-
-#section-one-news {
-    background-image: url('/images/Mortal\ Kombat\ 1.jpg');
-    color: #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-right: 100px;
-    
-}
-
-#section-two-news {
-    background-image: url('/images/one\ piece\ odyssey.jpg');
-    color: #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-article h1 {
-    color: #fff;
-}
-
-.section h2 {
-    position: relative;
-    top: 340px;
-}
-
-.section p {
-    position: relative;
-    font-size: 20px;
-    top: 350px;
-}
-
-
-
-#scroll-left-btn {
-    background: linear-gradient(45deg, #06d3d3, #4a148c);
-    width: 30px;
-    height: 30px;
-    border: 2px solid #121212;
-    border-radius: 8px;
-    margin-left: 47%;
-}
-
-#scroll-right-btn {
-    background: linear-gradient(45deg, #4a148c, #06d3d3);
-    width: 30px;
-    height: 30px;
-    border: 2px solid #121212;
-    border-radius: 8px;
-}
-
-/* To show the first section */
-.section:first-child {
-    display: block;
-}
-
-/* Media Query for Tablets and Smaller Screens */
-@media screen and (max-width: 480px) {
-
-    main {
-        flex-direction: row;
-    }
-    
-    aside {
-        width: 100%; /* Make the aside section full width on smaller screens */
-    }
-
-    .scroll-container {
-        flex-direction: column;
-        height: 75vh;
-    }
-    
-    .section {
-        flex: 0 0 100%;
-        height: 200px;
-    }
-
-    .section p {
-        font-size: 5rem;
-    }
-
-    .section h2 {
-        font-size: large;
-    }
+    height: 80px;
 }
