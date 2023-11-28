@@ -477,6 +477,36 @@ main h4:hover {
 
 }
 
+/* Scroll Bar Webkits */
+/* Chrome, Safari, Opera */
+::-webkit-scrollbar {
+    width: 10px;
+    border: 2px solid #0c0c0c;
+}
+
+::-webkit-scrollbar-track {
+background: #292b2b;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, 
+    #a559df 0%, 
+    #9553c6 0%,
+    #9155be 21%,
+    #8355a7 52%,
+    #5b2684 78%,
+    #6911ac 100%);
+border: 2px solid #0c0c0c;
+border-radius: 20px;
+}
+
+/* For Firefox */
+::-webkit-scrollbar {
+scrollbar-width: thin;
+scrollbar-color: #00ffff  #4a148c;
+}
+
 /* Footer CSS */
 .footer__container {
     background-color: #141414;

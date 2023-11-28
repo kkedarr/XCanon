@@ -102,7 +102,7 @@ main {
     border: 1px solid #4a148c;
     border-radius: 10px;
     width: 380px;
-    height: 500 px;
+    height: auto;
     background-color: #4a148c;
     background-image: linear-gradient(to right, 
     #a559df 0%, 
@@ -125,6 +125,7 @@ main {
     color: #fffefe;
     font-weight: normal;
     justify-content: center;
+    letter-spacing: 1.2px;
 }
 
 #card-description p a {
@@ -193,7 +194,95 @@ main {
 #date-and-author {
     position: relative;
     display: flex;
-  }
+}
+
+/* Scroll Bar */
+.scrollbar-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    
+}
+
+/* Scroll Bar Webkits */
+/* Chrome, Safari, Opera */
+::-webkit-scrollbar {
+        width: 10px;
+        border: 2px solid #0c0c0c;
+}
+
+::-webkit-scrollbar-track {
+    background: #292b2b;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, 
+    #a559df 0%, 
+    #9553c6 0%,
+    #9155be 21%,
+    #8355a7 52%,
+    #5b2684 78%,
+    #6911ac 100%);
+    border: 2px solid #0c0c0c;
+    border-radius: 20px;
+}
+
+/* For Firefox */
+::-webkit-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #00ffff  #4a148c;
+}
+
+
+
+::-webkit-scrollbar-title {
+    
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(to right, 
+    #a559df 0%, 
+    #9553c6 0%,
+    #9155be 21%,
+    #8355a7 52%,
+    #5b2684 78%,
+    #6911ac 100%);
+    border: 2px solid #0c0c0c;
+    border-radius: 20px;
+}
+
+.scrollbar-title {
+    color: #00ffff;
+    font-size: xx-large;
+}
+
+
+.mini-card {
+    display: flex;
+    gap: 16px;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #1c1c1c;
+    border: 3.5px solid #4a148c;
+    border-radius: 10px;
+}
+
+.mini-card-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 280px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+    border-radius: 10px;
+}
+
 
 footer {
     color: white;
@@ -203,7 +292,7 @@ footer {
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 767px) {
+@media (max-width: 600px) {
     body {
         font-size: 14px;
     }
@@ -222,7 +311,6 @@ footer {
     }
 
     nav ul {
-        order: -1;
         display: flex;
         justify-content: flex-start;
         margin-right: 20px;

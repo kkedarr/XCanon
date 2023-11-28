@@ -1,24 +1,12 @@
-const scrollContainer = document.querySelector('.scroll-container');
-const sections = document.querySelectorAll('.section');
-const scrollLeftButton = document.getElementById('scroll-left-btn');
-const scrollRightButton = document.getElementById('scroll-right-btn');
+// Get the scroll container and mini-cards
+const scrollContainer = document.getElementById("scroll-container");
+const miniCards = scrollContainer.getElementsByClassName("mini-card-article");
 
-
-let currentIndex = 0;
-
-
-function showSection(index) {
-    sections.forEach((section, i) => {
-        section.style.display = i === index ? 'block' : 'none';
-    })
+// Calculate the total width of mini-cards
+let totalWidth = 0;
+for (const miniCard of miniCards) {
+  totalWidth += miniCard.offsetWidth;
 }
 
-scrollLeftButton.addEventListener('click', () => {
-    currentIndex = Math.max(currentIndex - 1, 0);
-    showSection(currentIndex);
-});
-
-scrollRightButton.addEventListener('click', () => {
-    currentIndex = Math.min(currentIndex + 1, sections.length - 1);
-    showSection(currentIndex);
-});
+// Set the width of the scroll container to the total width of mini-cards
+scrollContainer.style.width = totalWidth + "px";
