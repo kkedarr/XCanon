@@ -1,4 +1,4 @@
-# First-JS-Website-Project
+# Xcanon-gaming
 Gaming website project
 ## Getting Started
 Welcome to the ultimate gaming hub where your gaming journey begins! Whether you're a casual gamer or an eSports enthusiast, our platform offers a world of opportunities to connect, compete, and explore the gaming universe. Here's how to get started:
